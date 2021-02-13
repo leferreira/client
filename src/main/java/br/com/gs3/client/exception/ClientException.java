@@ -1,4 +1,4 @@
-package br.com.gs2.client.exception;
+package br.com.gs3.client.exception;
 
 public class ClientException extends Exception {
 

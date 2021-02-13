@@ -1,4 +1,4 @@
-package br.com.gs2.client.admin.entity.base;
+package br.com.gs3.client.admin.entity.base;
 
 import java.io.Serializable;
 

@@ -1,4 +1,4 @@
-package br.com.gs2.client.admin.configuration;
+package br.com.gs3.client.admin.configuration;
 
 import static springfox.documentation.builders.PathSelectors.regex;
 

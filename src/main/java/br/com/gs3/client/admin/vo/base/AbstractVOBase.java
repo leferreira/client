@@ -1,6 +1,6 @@
-package br.com.gs2.client.admin.vo.base;
+package br.com.gs3.client.admin.vo.base;
 
-import br.com.gs2.client.admin.entity.base.AbstractEntityBase;
+import br.com.gs3.client.admin.entity.base.AbstractEntityBase;
 
 public abstract class AbstractVOBase<T extends AbstractEntityBase<T>> {
 

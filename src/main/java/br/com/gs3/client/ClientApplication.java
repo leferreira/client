@@ -1,4 +1,4 @@
-package br.com.gs2.client;
+package br.com.gs3.client;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

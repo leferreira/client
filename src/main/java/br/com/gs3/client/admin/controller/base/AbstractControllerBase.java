@@ -1,8 +1,8 @@
-package br.com.gs2.client.admin.controller.base;
+package br.com.gs3.client.admin.controller.base;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
-import br.com.gs2.client.admin.service.base.AbstractServiceBase;
+import br.com.gs3.client.admin.service.base.AbstractServiceBase;
 
 public abstract class AbstractControllerBase<T extends AbstractServiceBase<?, ?>> {
 

@@ -1,4 +1,4 @@
-package br.com.gs2.client.admin.service.base;
+package br.com.gs3.client.admin.service.base;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -6,8 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 
-import br.com.gs2.client.admin.entity.base.AbstractEntityBase;
-import br.com.gs2.client.admin.repository.base.AbstractRepositoryBase;
+import br.com.gs3.client.admin.entity.base.AbstractEntityBase;
+import br.com.gs3.client.admin.repository.base.AbstractRepositoryBase;
 
 public abstract class AbstractServiceBase<D extends AbstractEntityBase<D>, T extends AbstractRepositoryBase<D, Integer>> {
 

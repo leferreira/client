@@ -1,4 +1,4 @@
-package br.com.gs2.client;
+package br.com.gs3.client;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
