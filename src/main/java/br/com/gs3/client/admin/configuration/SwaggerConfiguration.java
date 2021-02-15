@@ -21,7 +21,7 @@ public class SwaggerConfiguration {
 	@Bean
 	public Docket Api() {
 		return new Docket(DocumentationType.SWAGGER_2).select()
-				.apis(RequestHandlerSelectors.basePackage("com.vector.next.chatbot")).paths(regex("/.*")).build()
+				.apis(RequestHandlerSelectors.basePackage("br.com.gs3.client")).paths(regex("/.*")).build()
 				.apiInfo(metaInfo());
 	}
 
@@ -29,7 +29,7 @@ public class SwaggerConfiguration {
 	private ApiInfo metaInfo() {
 		return new ApiInfo("API REST client", "API REST gestão de clientes", "1.0",
 				"Terms of Service",
-				new Contact("GS2", "github.com/leferreira/client",
+				new Contact("GS3", "github.com/leferreira/client",
 						"leferfsa@gmail.com"),
 				"Apache License Version 2.0", "https://www.apache.org/licesen.html", new ArrayList<VendorExtension>());
 	}
