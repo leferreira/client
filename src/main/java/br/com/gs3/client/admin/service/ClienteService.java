@@ -1,7 +1,13 @@
 package br.com.gs3.client.admin.service;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
@@ -54,6 +60,17 @@ public class ClienteService extends AbstractServiceBase<Cliente, ClienteReposito
 			logger().info("Cliente " + record.getNome() + " Foi removido do sistema");
 			return ResponseEntity.ok().build();
 		}).orElse(ResponseEntity.notFound().build());
+	}
+
+	public List<Cliente> getAll(Integer pageNo, Integer pageSize, String sortBy) {
+		Pageable paging = PageRequest.of(pageNo, pageSize, Sort.by(sortBy));
+		Page<Cliente> pagedResult = getRepository().findAll(paging);
+		
+		if(pagedResult.hasContent()) {
+            return pagedResult.getContent();
+        } else {
+            return new ArrayList<Cliente>();
+        }
 	}
 
 }
