@@ -13,4 +13,6 @@ import br.com.gs3.client.admin.repository.base.AbstractRepositoryBase;
 @Repository
 public interface UsuarioRepository extends AbstractRepositoryBase<Usuario, Integer> {
 
+	Usuario findByLogin(String username);
+
 }

@@ -43,7 +43,7 @@ public class Usuario extends AbstractEntityBase<Usuario> {
 	
 	@Getter
 	@Setter
-	@Column(name = "senha", length = 50)
+	@Column(name = "senha", length = 150)
 	@NotBlank(message = "A Senha é obrigatório")
 	@Size(min = 6, message ="A senha deve conter pelo menos 6 caracteres" )
 	private String senha;
@@ -54,7 +54,6 @@ public class Usuario extends AbstractEntityBase<Usuario> {
 	@Enumerated(EnumType.STRING)
 	private PerfilEnum perfil;
 	
-
 	@Override
 	public int compareTo(Usuario entity) {
 		if (this.getLogin().equals(entity.getLogin()) && this.getPerfil().equals(entity.getPerfil())) {
